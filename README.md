@@ -4,19 +4,19 @@
 
 **Election-Audit Results: Using a bulleted list, address the following election outcomes. Use images or examples of your code as support where necessary.**
 -How many votes were cast in this congressional election?
-  *Total Votes: 369,711, this was determiend by 
-  *Initialize a total vote counter. by total_votes = 0 and then opening up the csv and   Add to the total vote count via total_votes = total_votes + 1, this way *the code will go through each row of data and total it. 
+  Total Votes: 369,711, this was determiend by 
+  _Initialize a total vote counter. by total_votes = 0 and then opening up the csv and   Add to the total vote count via total_votes = total_votes + 1_, this way the code will go through each row of data and total it. 
 
--Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
-County Votes:
-Jefferson: 10.5% (38,855) 
-Denver: 82.8% (306,055)
-Arapahoe: 6.7% (24,801)
+**-Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
+  County Votes:**
+  Jefferson: 10.5% (38,855) 
+  Denver: 82.8% (306,055)
+  Arapahoe: 6.7% (24,801)
 This was calculated by the following lines of code:
-    for county_name in county_votes:
+    _for county_name in county_votes:
         cvotes = county_votes.get(county_name)
         cvote_percentage = float(cvotes) / float(total_votes) * 100
-        county_results = (f"{county_name}: {cvote_percentage:.1f}% ({cvotes:,})\n")
+        county_results = (f"{county_name}: {cvote_percentage:.1f}% ({cvotes:,})\n")_
  We created a loop to run through each county name and take the vote total of each county and divide it by 100. The last row of code displays the results to be read by the user.       
 
 -Which county had the largest number of votes?
